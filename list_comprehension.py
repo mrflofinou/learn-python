@@ -25,3 +25,5 @@ words = ['jacqueline',
 
 # create a new list with numbers and words as tuples.
 # should look like: [('jacqueline', 1), ('robert', 4)]
+
+# A good resource: https://hackernoon.com/list-comprehension-in-python-8895a785550b
