@@ -23,6 +23,10 @@ words = ['jacqueline',
 # create a new list with even numbers only (nombres pairs).
 # Use a conditional structure!
 
+double_numbers = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]]
+#create a new list from double_numbers with odd numbers only
+# should look like : [1, 3, 5, 7, 9]
+
 # create a new list with numbers and words as tuples.
 # should look like: [('jacqueline', 1), ('robert', 4)]
 
