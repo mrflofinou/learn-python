@@ -6,14 +6,14 @@
 ####################################################################
 
 class Florian:
+    HEIGHT = 1.80
 
     def __init__(self, beard_color, glasses):
         self.beard_color = beard_color
         self.glasses = glasses
-        self.height = 1.80
 
-    def know_beard_color(self):
-        pass
+    def know_beard_color(self, instance):
+        print(instance.beard_color)
 
 
 flo = Florian(glasses="noires", beard_color="brun")
