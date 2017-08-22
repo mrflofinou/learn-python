@@ -6,16 +6,25 @@
 ####################################################################
 
 class Florian:
-    HEIGHT = 1.80
+    HEIGHT = 1.75
+    NAMES = []
 
-    def __init__(self, beard_color, glasses):
+    def __init__(self, beard_color, glasses, name):
         self.beard_color = beard_color
         self.glasses = glasses
+        self.name = name
+        self.NAMES.append(name)
 
     def know_beard_color(self, instance):
-        print(instance.beard_color)
+        return instance.beard_color
+
+    @classmethod
+    def name_each_florian(cls):
+        print(cls.NAMES)
 
 
-flo = Florian(glasses="noires", beard_color="brun")
-fiflo = Florian(glasses="rouges", beard_color="blanche")
+flo = Florian(glasses="noires", beard_color="brun", name="MrFlofinou")
+fiflo = Florian(glasses="rouges", beard_color="blanche", name="Robert")
+fofli = Florian(glasses="bleu", beard_color="roux", name="Jean-Paul")
 fiflo.know_beard_color(flo)
+Florian.name_each_florian()
