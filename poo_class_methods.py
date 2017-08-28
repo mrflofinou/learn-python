@@ -26,5 +26,5 @@ class Florian:
 flo = Florian(glasses="noires", beard_color="brun", name="MrFlofinou")
 fiflo = Florian(glasses="rouges", beard_color="blanche", name="Robert")
 fofli = Florian(glasses="bleu", beard_color="roux", name="Jean-Paul")
-fiflo.know_beard_color(flo)
-Florian.name_each_florian()
+print(fiflo.know_beard_color(flo))
+Florian.name_each_floria()
