@@ -7,24 +7,30 @@
 
 class Florian:
     HEIGHT = 1.75
+    INSTANCES = []
     NAMES = []
 
     def __init__(self, beard_color, glasses, name):
         self.beard_color = beard_color
         self.glasses = glasses
         self.name = name
+        self.ID = len(self.INSTANCES)
+        self.INSTANCES.append([self.beard_color, self.glasses, self.name])
         self.NAMES.append(name)
 
     def know_beard_color(self, instance):
-        return instance.beard_color
+        for i, florian in enumerate(self.INSTANCES):
+            if self.INSTANCES[instance.ID] == self.INSTANCES[i]:
+                beard_color = self.INSTANCES[i][0]
+        return beard_color
 
     @classmethod
     def name_each_florian(cls):
-        print(cls.NAMES)
+        return cls.NAMES
 
 
 flo = Florian(glasses="noires", beard_color="brun", name="MrFlofinou")
 fiflo = Florian(glasses="rouges", beard_color="blanche", name="Robert")
-fofli = Florian(glasses="bleu", beard_color="roux", name="Jean-Paul")
-print(fiflo.know_beard_color(flo))
-Florian.name_each_floria()
+fofli = Florian(glasses="bleues", beard_color="roux", name="Jean-Paul")
+print(fiflo.know_beard_color(fiflo))
+print(Florian.name_each_florian())
